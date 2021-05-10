@@ -6,7 +6,7 @@
 /*   By: bswag <bswag@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 15:59:43 by bswag             #+#    #+#             */
-/*   Updated: 2021/05/06 19:01:41 by bswag            ###   ########.fr       */
+/*   Updated: 2021/05/11 01:56:57 by bswag            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,15 @@
 #include <limits.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+#define IN_PROCESS	0
+#define COMPLITED	1
+#define DEAD		2
+
+typedef struct s_phil	t_phil;
 
 typedef struct s_table
 {
@@ -31,8 +40,12 @@ typedef struct s_table
 
 typedef struct s_phil
 {
+	int				num;
 	pthread_t		thread;
 	t_table			*table;
+	long long int	time_last;
+	int				num_meals;
+	int				status;
 }					t_phil;
 
 long long int	ft_atoi_long(const char *str);
