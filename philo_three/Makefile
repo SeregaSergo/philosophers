@@ -6,13 +6,15 @@
 #    By: bswag <bswag@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/20 17:19:13 by bswag             #+#    #+#              #
-#    Updated: 2021/05/06 18:04:14 by bswag            ###   ########.fr        #
+#    Updated: 2021/05/11 23:14:42 by bswag            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME =		philo_three
 SRCS =		main.c \
-			utils.c
+			utils.c \
+			process.c \
+			main_proc.c
 PATHSRC =	./srcs/
 OBJS =		$(SRCS:%.c=%.o)
 CC =		gcc

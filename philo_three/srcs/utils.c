@@ -6,11 +6,11 @@
 /*   By: bswag <bswag@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 16:35:08 by bswag             #+#    #+#             */
-/*   Updated: 2021/05/06 18:02:20 by bswag            ###   ########.fr       */
+/*   Updated: 2021/05/11 22:42:18 by bswag            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/philo_one.h"
+#include "../includes/philo_three.h"
 
 long long int	ft_atoi_long(const char *str)
 {
